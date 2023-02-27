@@ -12,7 +12,7 @@ int main (void){
     while (x < 11)
     {
         sum += x;
-        x++;
+        ++x;
 
     }
 
