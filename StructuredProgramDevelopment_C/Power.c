@@ -20,7 +20,7 @@ int main (void){
     {
         power *= x;
 
-        i++;
+        ++i;
     }
 
     printf("The result of %u raised to the power of %u is %u", x, y, power);
