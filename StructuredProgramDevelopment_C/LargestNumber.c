@@ -25,5 +25,5 @@ int main(void){
         ++count;
     }
 
-    printf("The largets number is : %d", largest);
+    printf("The largest number is : %d", largest);
 }
