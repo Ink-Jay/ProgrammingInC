@@ -11,11 +11,13 @@ input/output dialog.*/
 int main (void){
 
     int totalCollected;
-    char month [10];
+    char month [10];    //declaring "strings" in C
     float sales;
     float countyTax;
     float stateTax;
     float totalTax;
+    float stateTaxRate = 0.04;
+    float countyTaxRate = 0.05;
 
 
     puts("Enter total amount collected (-1 to quit):");
@@ -28,8 +30,8 @@ int main (void){
     puts("Enter the month of the year :");
     scanf("%s", &month);
 
-    countyTax = (0.05) * totalCollected;
-    stateTax = (0.04) * totalCollected;
+    countyTax = countyTaxRate * totalCollected;
+    stateTax = stateTaxRate * totalCollected;
     totalTax = countyTax + stateTax;
 
     sales = totalCollected - totalTax;
