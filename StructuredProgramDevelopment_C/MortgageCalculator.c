@@ -13,6 +13,11 @@ int main (void) {
 
     puts("Enter account number (-1 to end):");
     scanf("%d", &accountNumber);
+    
+     if(accountNumber == -1){
+        exit(0);
+    }
+    
     puts("Enter mortgage amount (in dollars): ");
     scanf("%f", &mortgageAmount);
     puts("Enter mortgage term (in years): ");
